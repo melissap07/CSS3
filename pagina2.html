@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página con Flexbox</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            width: 100%;
+            height: 150px;
+            margin-top: 10px;
+            background-color: #333;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header-column {
+            width: 20%;
+            height: 150px;
+            background-color: #65ce1e;
+        }
+
+        .header-column.middle {
+            width: 58%;
+        }
+
+        .header-column.last {
+            width: 20%;
+        }
+
+        .container {
+            display: flex;
+            margin: 0 auto;
+            width: 96%;
+            padding: 10px;
+        }
+
+        .left-column {
+            width: 68%;
+            height: 248px;
+            background-color: #ec4242;
+            margin-right: 4%;
+        }
+
+        .left-column2 {
+            width: 68%;
+            height: 248px;
+            background-color: #86c422;
+            margin-right: 4%;
+            margin-top: 10px;
+        }
+        .right-column {
+            width: 28%;
+            height: 496px;
+            background-color: #40abb3;
+        }
+
+        footer {
+            width: 100%;
+            height: 100px;
+            background-color: #333;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            position: absolute;
+            bottom: 0;
+        }
+
+        .footer-column {
+            width: 24%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-column">Columna 1</div>
+        <div class="header-column middle">Columna 2</div>
+        <div class="header-column last">Columna 3</div>
+    </header>
+    <div class="container">
+        <div class="left-column">Bloque 1</div>
+        <div class="left-column2">Bloque 2</div>
+        <div class="right-column">Bloque 3</div>
+    </div>
+    <footer>
+        <div class="footer-column">Columna 1</div>
+        <div class="footer-column">Columna 2</div>
+        <div class="footer-column">Columna 3</div>
+        <div class="footer-column">Columna 4</div>
+    </footer>
+</body>
+</html>
