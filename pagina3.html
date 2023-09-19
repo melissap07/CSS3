@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página con Encabezado, Cuerpo y Pie de Página</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            width: 100%;
+            height: 150px;
+            display: flex;
+        }
+
+        .left-column {
+            width: 20%;
+            height: 150px;
+            background-color: #333;
+            color: white;
+        }
+
+        .right-column {
+            width: 78%;
+            height: 150px;
+            display: flex;
+            background-color: #783d3d;
+        }
+
+        .fixed-container {
+            width: 50px;
+            height: 50px;
+            background-color: #6b979a;
+            margin: auto;
+            color: white;
+            text-align: center;
+            line-height: 50px;
+            margin-top: 50px;
+        }
+
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .upper-left {
+            width: 48%;
+            height: 248px;
+            background-color: #ec4242;
+        }
+
+        .upper-right {
+            width: 48%;
+            height: 248px;
+            background-color: #86c422;
+        }
+
+        .lower-left {
+            width: 48%;
+            height: 248px;
+            background-color: #40abb3;
+        }
+
+        .lower-right {
+            width: 48%;
+            height: 248px;
+            background-color: #f9a11e;
+        }
+
+        footer {
+            width: 100%;
+            height: 100px;
+            display: flex;
+        }
+
+        .footer-column {
+            width: 48%;
+            height: 100%;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            line-height: 100px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="left-column">Columna 1</div>
+        <div class="right-column">
+            <div class="fixed-container">Fijo</div>
+        </div>
+    </header>
+
+    <div class="content">
+        <div class="upper-left">Superior Izquierdo</div>
+        <div class="upper-right">Superior Derecho</div>
+        <div class="lower-left">Inferior Izquierdo</div>
+        <div class="lower-right">Inferior Derecho</div>
+    </div>
+
+    <footer>
+        <div class="footer-column">Pie de Página 1</div>
+        <div class="footer-column">Pie de Página 2</div>
+    </footer>
+</body>
+</html>

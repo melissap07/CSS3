@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página con Flexbox</title>
+    <title>Canciones más populares</title>
     <style>
         body {
             margin: 0;
@@ -38,6 +38,7 @@
 
         .container {
             display: flex;
+            flex-wrap: wrap;
             margin: 0 auto;
             width: 96%;
             padding: 10px;
@@ -47,20 +48,34 @@
             width: 68%;
             height: 248px;
             background-color: #ec4242;
-            margin-right: 4%;
+            margin-bottom: 10px;
         }
-
         .left-column2 {
             width: 68%;
             height: 248px;
-            background-color: #86c422;
-            margin-right: 4%;
-            margin-top: 10px;
+            background-color: #c36f6f;
+            margin-bottom: 10px;
         }
+        .image-container {
+            max-width: 15%; 
+            height: auto; 
+            margin-left: 500px;
+            
+        }
+        .image-container2 {
+            max-width: 70%; 
+            height: auto; 
+            margin-left: 80px;
+            
+        }
+
         .right-column {
             width: 28%;
             height: 496px;
-            background-color: #40abb3;
+            background-color: #6b979a;
+            margin-left: 60px; 
+            margin-top: -255px;
+     
         }
 
         footer {
@@ -78,24 +93,39 @@
         .footer-column {
             width: 24%;
         }
+        .footer-image {
+            max-width: 100%; 
+            max-height: 100px; 
+        }
     </style>
 </head>
 <body>
     <header>
-        <div class="header-column">Columna 1</div>
-        <div class="header-column middle">Columna 2</div>
-        <div class="header-column last">Columna 3</div>
+        <a href="pagina1.html" class="column">Sección 1</a>
+        <div class="header-column middle">Canciones más populares del 2023</div>
+        <a href="pagina3.html" class="column">Sección 1</a>
     </header>
     <div class="container">
-        <div class="left-column">Bloque 1</div>
-        <div class="left-column2">Bloque 2</div>
-        <div class="right-column">Bloque 3</div>
+        <div class="left-column"><b>Bizarrap Music Sessions 53 con Shakira:</b> La colombiana y el autor de hits como Quédate junto a Quevedo han cambiado las normas del juego con su Music Sessions 53 consiguiendo que, en menos de 24 horas 50 millones de personas de todo el planeta vieran su videoclip. En este temazo la artista colombiana le lanza dardos a su expareja, el futbolista Gerard Piqué y demuestra que, junto a Bizarrap, su música adquiere todavía más fuerza.
+            <br>
+            <img src="bizarrap-shakira-juntos-bzrp-music-session-53_104.jpg.webp" alt="Imagen en el contenedor" class="image-container">
+        </div>
+        <div class="left-column2"><b>Flowers de Miley Cyrus</b> Una canción que se ha convertido en un verdadero himno feminista de este 2023 en la que, respondiendo a un tema de Bruno Mars, Cyrus deja bien claro que las mujeres son bien capaces de cuidarse a sí mismas sin la necesidad de que ningún hombre intervenga en sus vidas.
+            <br>
+            <img src="362bd961-67eb-462f-a0c0-d0dffc9dedd3_16-9-discover-aspect-ratio_default_0.jpg" alt="Imagen en el contenedor" class="image-container">
+        </div>
+        <div class="right-column"><b>TQG de Shakira y Karol G:</b> Karol G invitó a Shakira a participar en TQG, uno de los hits de su nuevo álbum Mañana será bonito y el resultado ha sido un verdadero éxito internacional. Es la canción de moda y no extraña nada. Su ritmo es pegadizo y su letra, potente y contundente. 
+            <br>
+            <img src="16793523230215.jpg" alt="Imagen en el contenedor" class="image-container2">
+       </div>
     </div>
     <footer>
-        <div class="footer-column">Columna 1</div>
-        <div class="footer-column">Columna 2</div>
-        <div class="footer-column">Columna 3</div>
-        <div class="footer-column">Columna 4</div>
+        <div class="footer-column">Melissa Perez,  ingeniería informática </div>
+        <div class="footer-column">Brayan Baez,  ingeniería informática </div>
+        <div class="footer-column">Estefanía Mayorga,  comunicación social y periodismo </div>
+        <div class="footer-column">
+            <img src="by-nd.png" alt="Imagen en el pie de página" class="footer-image">
+        </div>
     </footer>
 </body>
 </html>
